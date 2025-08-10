@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Upload Files</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="box">
+            <div style="display:flex; margin-top:20px; margin-left:30px">
+                <div style="margin-top:15px; width:56.02px; height:56.02px; border: 1.19px solid rgba(203, 208, 220, 1); border-radius:50%; display: flex; justify-content: center; align-items:center">
+                    <img src="cloud-check.jpg" alt="icon" width="27.41px" height="27.41px">
+                </div>
+                <div style="margin-left:20px">
+                    <p style="font-size:20.26px; font-weight:500; color:rgba(41, 45, 50, 1); margin-bottom:0px">Upload files</p>
+                    <p style="font-size:17.28px; font-weight:500; color:rgba(169, 172, 180, 1); margin-top:2px">Select and upload the files of your choice</p>
+                </div>
+                <div style="margin-left:30px; margin-top:20px; width:44px; height:44px; background-color:rgba(215, 237, 255, 1); border-radius:14px; display: flex; justify-content: center; align-items:center"><i class="fa fa-close" style="font-size:24px"></i></div>
+            </div>
+            <div class="box-two">
+                <div class="content">
+                    <img src="cloud-check.jpg" alt="icon" width="27.41px" height="27.41px" style="margin-top:40px; margin-left:46%">
+                    <div style="margin-top:20px">
+                        <p style="margin-bottom:0px; margin-left:20%; font-size:17.88px; font-weight:500; color:rgba(41, 45, 50, 1)">Choose a file or drag & drop it here</p>
+                        <p style="margin-top:5px; margin-left:15%; font-size:15.5px; font-weight:500; color:rgba(169, 172, 180, 1)">JPEG, PNG, PDF and MP4 formats upto 50MB</p>
+                    </div>
+                    <div class="drag-drop" id="drag-drop"><p>Browse File</p></div>
+                    <input type="file" id="fileInput" hidden>
+                </div> 
+            </div>
+            <div class="previewContainer" id="previewContainer">
+                <div style="display:flex">
+                    <div class="preview-file" id="preview-file"></div>
+                    <div style="margin-top:10px">
+                        <p style="font-size: 17.88px; font-weight:500; color:rgba(41, 45, 50, 1); margin-bottom:0px" id="fileNameDisplay"></p>
+                        <div style="display:flex; margin-top:0px">
+                            <p style="font-size:14.9px; font-weight:400; color:rgba(169, 172, 180, 1)" id="fileSizeDisplay"></p>
+                            <span style="margin-left:5px; margin-top:17px; font-size:10px;color:rgba(169, 172, 180, 1)">&#9679;</span>
+                            <div style="margin-left:5px; display:flex; justify-content:center; align-items:center"><i class="fa fa-check-circle" style="font-size:11.92px;color:rgba(62, 191, 143, 1)"></i><p style="margin-left:5px; font-size:14.9px; font-weight:400">Completed</p></div>
+                        </div>
+                    </div>
+                    <i class="fa fa-trash-o" id="trash" style="position:fixed; cursor:pointer; margin-top:30px;  margin-left:470px; font-size:15x"></i>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+
+</html>
